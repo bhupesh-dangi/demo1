@@ -1,0 +1,9 @@
+Go to your HTML file on GitHub (e.g., index.html).
+
+Click "Raw".
+
+Copy the URL from the address bar 
+
+Paste that URL into:
+
+https://htmlpreview.github.io/?<your-raw-url>
