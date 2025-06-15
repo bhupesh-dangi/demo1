@@ -1,0 +1,26 @@
+pipeline {
+    agent {
+        label 'slave'
+    }
+    stages {
+        stage('Git Checkout') {
+            steps {
+                // Checkout your source code repository
+                git branch: 'main', 
+                url: 'https://github.com/bhupesh-dangi/demo1.git'
+            }
+        }
+        stage('Linux command') {
+            steps {
+                sh 'date'
+                sh 'sleep 30'
+                sh 'cal'
+            }
+        }
+        stage('view web page'){
+            steps {
+                sh 'cat index1.html'
+            }
+        }
+    }
+}
